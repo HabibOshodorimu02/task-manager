@@ -2,12 +2,15 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Poppins", "sans-serif"], // Poppins as default sans
-        poppins: ["Poppins", "sans-serif"], // Utility: font-poppins
-      },
+    fontFamily: {
+      sans: ["Poppins", "sans-serif"], // default sans (font-sans)
+      poppins: ["Poppins", "sans-serif"], // custom utility (font-poppins)
+    },
+    colors: {
+      primary: "#1368ec", // use with text-primary, bg-primary, border-primary
+    },
+    screens: {
+      "3xl": "1920px", // custom breakpoint
     },
   },
-  plugins: [],
 };

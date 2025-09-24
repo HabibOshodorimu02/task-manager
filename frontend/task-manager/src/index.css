@@ -1,17 +1,10 @@
-@import "tailwindcss";
+/* Import Google Fonts first */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
-theme {
-  --font-display: sans-serif, Poppins;
-  --break-point-3xl: 1920px;
-  --color-primary: #1368ec;
-}
-@layer base {
-  html {
-    font-family: var(--font-display);
-  }
-}
+/* Tailwind v4 */
+@import "tailwindcss";
 
+/* Optional: global styles */
 body {
   background-color: #fcfbfc;
   overflow-x: hidden;
